@@ -12,6 +12,56 @@
       <div class="contenttype-title">
         <h3>Posts</h3>
         POSTIT !!!!!!!!!!!!
+        
+ <?php
+
+header("Access-Control-Allow-Origin: *");
+
+$conn = new mysqli("remotemysql.com", "4pkYNOCj4N", "mN1u3cQVv4", "4pkYNOCj4N");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
+
+$sql = "SELECT * FROM test";
+$result = $conn->query($sql);
+
+$response = array();
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc())
+		$response[] = $row;
+} else {
+    echo "0 results";
+}
+
+echo json_encode($response);
+
+
+
+
+$conn->close();
+
+ ?>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         //<a href="" class="side-text-button" data-toggle="modal" data-target="#add-content-modal"><i class="fas fa-plus-circle"></i> New post</a>
       </div>
       <div class="list-group">
