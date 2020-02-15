@@ -1,8 +1,8 @@
 <?php
   $page_name = "Dashboard";
-  //include "partials/_header.php";
-  //include "partials/_menu.php";
-  include "partials/ext.php";
+  include "partials/_header.php";
+  include "partials/_menu.php";
+  //include "partials/ext.php";
 ?>
 
 <main role="main" class="container-fluid">
