@@ -11,7 +11,8 @@
     <div class="col-sm">
       <div class="contenttype-title">
         <h3>Posts</h3>
-        <a href="" class="side-text-button" data-toggle="modal" data-target="#add-content-modal"><i class="fas fa-plus-circle"></i> New post</a>
+        POSTIT !!!!!!!!!!!!
+        //<a href="" class="side-text-button" data-toggle="modal" data-target="#add-content-modal"><i class="fas fa-plus-circle"></i> New post</a>
       </div>
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action">How to deal with savage chicken ?</a>
