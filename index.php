@@ -1,7 +1,7 @@
 <?php
   $page_name = "Dashboard";
-  include "partials/_header.php";
-  include "partials/_menu.php";
+  //include "partials/_header.php";
+  //include "partials/_menu.php";
   include "partials/ext.php";
 ?>
 
