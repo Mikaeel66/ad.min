@@ -15,13 +15,13 @@
         
  <?php
 
-header("Access-Control-Allow-Origin: *");
+
 
 $conn = new mysqli("remotemysql.com", "4pkYNOCj4N", "mN1u3cQVv4", "4pkYNOCj4N");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }else{ 
-  echo "<BR>Tietokanta toimii!!!";
+  echo "<BR>Tietokanta toimii!!!" ;
 }
 
 
@@ -46,25 +46,8 @@ echo json_encode($response);
 $conn->close();
 
  ?>
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        //<a href="" class="side-text-button" data-toggle="modal" data-target="#add-content-modal"><i class="fas fa-plus-circle"></i> New post</a>
+       
+        <!-- <a href="" class="side-text-button" data-toggle="modal" data-target="#add-content-modal"><i class="fas fa-plus-circle"></i> New post</a> -->
       </div>
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action">How to deal with savage chicken ?</a>
