@@ -2,6 +2,7 @@
   $page_name = "Dashboard";
   include "partials/_header.php";
   include "partials/_menu.php";
+  echo "testii";
   //include "partials/ext.php";
 ?>
 
@@ -11,7 +12,7 @@
     <div class="col-sm">
       <div class="contenttype-title">
         <h3>Posts</h3>
-        POSTIT ??
+        Poooooo
         
  <?php
 
