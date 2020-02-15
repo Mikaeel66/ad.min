@@ -21,7 +21,7 @@ $conn = new mysqli("remotemysql.com", "4pkYNOCj4N", "mN1u3cQVv4", "4pkYNOCj4N");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }else{ 
-  echo "<BR>Tietokanta toimii!!!"
+  echo "<BR>Tietokanta toimii!!!";
 }
 
 
