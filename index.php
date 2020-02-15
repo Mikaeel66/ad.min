@@ -3,6 +3,43 @@
   include "partials/_header.php";
   include "partials/_menu.php";
   echo "testii";
+
+
+
+$conn = new mysqli("remotemysql.com", "4pkYNOCj4N", "mN1u3cQVv4", "4pkYNOCj4N");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}else{ 
+  echo "<BR>Tietokanta toimii!!!" ;
+}
+
+
+
+$sql = "SELECT * FROM test";
+$result = $conn->query($sql);
+
+$response = array();
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc())
+		$response[] = $row;
+} else {
+    echo "0 results";
+}
+
+echo json_encode($response);
+
+
+
+
+$conn->close();
+
+
+
+
+
+
+
   //include "partials/ext.php";
 ?>
 
